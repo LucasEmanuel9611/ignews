@@ -27,7 +27,26 @@ export default NextAuth({
       console.log(user);
 
       try {
-        await fauna.query(q.Create(q.Collection("users"), { data: { email } }));
+        //se não existe 
+        await fauna.query(
+          q.If(
+            q.Not(
+              q.Exists(
+                //casefold --> lowercase
+                q.Match(q.Index("user_by_email"), q.Casefold(user.email))
+              )
+            ),
+            //se não se 
+            q.Create(q.Collection("users"), { data: { email } }),
+             //se não se 
+            q.Get(
+              q.Match(
+                q.Index('user_by_email'),
+                q.Casefold(user.email)
+              )
+            )
+          )
+        );
 
         return true;
       } catch (err) {
