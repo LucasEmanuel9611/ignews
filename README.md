@@ -1,4 +1,4 @@
-<center>  <h1>LETMEASK</h1> </center>
+<center>  <h1>Ig News</h1> </center>
 
 <div > 
   <img src="https://github.com/LucasEmanuel9611/ignewsblob/master/public/images/home.png" alt="img Home"/>
