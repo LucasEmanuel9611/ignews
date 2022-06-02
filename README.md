@@ -1,7 +1,7 @@
 <center>  <h1>Ig News</h1> </center>
 
 <div > 
-  <img src="https://github.com/LucasEmanuel9611/ignewsblob/main/public/images/home.png" alt="imgHome"/>
+  <img src="https://github.com/LucasEmanuel9611/ignews/blob/main/public/images/home.png" alt="imgHome"/>
   <img src="https://github.com/LucasEmanuel9611/ignews/blob/main/public/images/payment.png" alt="imgStripe"/>
 </div>
 
