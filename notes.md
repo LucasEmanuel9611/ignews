@@ -42,3 +42,12 @@ e serve a página já montada para o browser. SSR
 
     * Toda a variavel ambiente que será carregada no browser tem set uma 
     NEXT_PUBLIC key
+
+--
+notas 08/2022
+## NOVOS APRENDIZADOS:
+
+* Sempre que possível realizar a formatação de dados logo após o consumo 
+* Proprierty prefetch na tag Link permite fazer um carregamento antecipado dados 
+* cloneElement para passar props parent to children 
+* asPath para captar path da URL atual
