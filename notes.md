@@ -51,3 +51,6 @@ notas 08/2022
 * Proprierty prefetch na tag Link permite fazer um carregamento antecipado dados 
 * cloneElement para passar props parent to children 
 * asPath para captar path da URL atual
+* staticProps X serverSideProps:
+    - static: permite pegar dados de forma mais rápida que só serão alterados em um determinado tempo
+    - serverSide: chamadas a api são feitas do lado servidor e ainda permitem informaçẽs de de req como cookies e saber se o usuário está logao  
