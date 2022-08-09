@@ -51,15 +51,19 @@ export default function PostPreview({ post }: PostPreviewProps) {
 
 export const getStaticPaths: GetStaticPaths = () => {
   return { 
+    // usando params e slug posse escolher oq ue vai ser gerado estsaticamente 
     paths: [],
     fallback: 'blocking'
+    /*
+    true - a page que não for geradas de forma estatica será criada em client side 
+    blocking - os conteudos que não foram gerados esticamente serão criados no SSR 
+    false - os conteudos que não foram gerados esticamente daram erro 404
+     */
   }
 }
 
 //esse post serã usado para indexação do google então não precisa de verificação de logi
-export const getStaticProps: GetStaticProps = async ({
-  params,
-}) => {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { slug } = params;
 
   const prismic = getPrismicClient();

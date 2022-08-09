@@ -53,4 +53,6 @@ notas 08/2022
 * asPath para captar path da URL atual
 * staticProps X serverSideProps:
     - static: permite pegar dados de forma mais rápida que só serão alterados em um determinado tempo
-    - serverSide: chamadas a api são feitas do lado servidor e ainda permitem informaçẽs de de req como cookies e saber se o usuário está logao  
+    - serverSide: chamadas a api são feitas do lado servidor e ainda permitem informaçẽs de de req como cookies e saber se o usuário está logado
+* as páginas estáticas podem ser geradas no momento da build ou no primeiro acesso. 
+  a geração durante build pode ser usada para páginas mais pesadas ou que guardam conteúdos mais importantes.  
